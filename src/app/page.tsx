@@ -2,8 +2,6 @@
 import Header from "@/components/Header";
 import Lanyard from "@/components/ui/Lanyard/Lanyard";
 import { useState, useEffect, useRef } from "react";
-import * as THREE from "three";
-// import { Lanyard } from "react-bits"
 
 // This is the main component for the online CV, simulating a terminal and an interactive card.
 export default function App() {
@@ -16,7 +14,6 @@ export default function App() {
   const [historyIndex, setHistoryIndex] = useState(-1);
   const terminalRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
   const cardContainerRef = useRef<HTMLDivElement>(null);
   const [localTime, setLocalTime] = useState<string>("");
 
